@@ -53,6 +53,12 @@ html, body {
   background-color: #4f46e5;
 }
 
+.header button.active {
+  background-color: #4338ca;
+  color: #ffffff;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.4);
+}
+
 /* ===== MAIN CONTENT ===== */
 .main {
   flex: 1; /* Растягивает контент, чтобы футер был внизу */
