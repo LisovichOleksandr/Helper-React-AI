@@ -1,0 +1,13 @@
+name: Test React App
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Repository Code
+        uses: actions/checkout@v6
+      - name: Set up dependency cache
+        run: npm ci
+      - name: Run Tests
+        run: npm run test
+        
